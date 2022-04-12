@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MaralShop",
+    "\\MaralShop\\0_Framework",
+    "\\MaralShop\\ShopManagement.Domain",
+    "\\MaralShop\\ShopManagement.Infrastructure.EfCore"
+  ],
+  "SelectedNode": "\\MaralShop\\0_Framework\\0_Framework.csproj",
+  "PreviewInSolutionExplorer": false
+}
