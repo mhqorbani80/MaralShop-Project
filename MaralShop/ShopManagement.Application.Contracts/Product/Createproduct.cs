@@ -1,6 +1,8 @@
-﻿namespace ShopManagement.Application.Contracts.Product
+﻿using ShopManagement.Application.Contracts.ProductCategory;
+
+namespace ShopManagement.Application.Contracts.Product
 {
-    public class Createproduct
+    public class CreateProduct
     {
         public string? Name { get;  set; }
         public string? Code { get;  set; }
@@ -14,6 +16,7 @@
         public string? MetaDescription { get;  set; }
         public string? Slug { get;  set; }
         public long ProductCategoryId { get;  set; }
+        public List<ProductCateoryViewModel> ProductCateories { get; set; }
 
     }
 }

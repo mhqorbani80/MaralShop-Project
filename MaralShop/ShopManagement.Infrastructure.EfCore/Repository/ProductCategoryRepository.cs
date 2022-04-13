@@ -45,5 +45,14 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
             }
             return query.OrderByDescending(i=>i.Id).ToList();
         }
+
+        List<ProductCateoryViewModel> IProductCategoryRepository.GetAll()
+        {
+            return _shopContext.ProductCategories.Select(i => new ProductCateoryViewModel
+            {
+                Id = i.Id,
+                Name = i.Name,
+            }).ToList();
+        }
     }
 }

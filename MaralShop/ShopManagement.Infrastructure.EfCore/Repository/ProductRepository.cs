@@ -17,7 +17,6 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
         public EditProduct GetDetails(long id)
         {
             return _shopContext.Products
-                .Include(i=>i.ProductCategory)
                 .Select(i => new EditProduct
             {
                     Id = i.Id,
@@ -40,27 +39,47 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
         {
             var query = _shopContext.Products
                 .Include(i => i.ProductCategory)
-                .Select(i => new ProductViewModel
+                .Select(i => new ProductViewModel()
                 {
-                    Id=i.Id,
-                    Name=i.Name,
-                    Code=i.Code,
-                    ProductCategory=i.ProductCategory.Name,
-                    PrductCategoryId=i.ProductCategoryId
+                    Id = i.Id,
+                    Name = i.Name,
+                    Code = i.Code,
+                    ProductCategory = i.ProductCategory.Name,
+                    PrductCategoryId = i.ProductCategoryId,
+                    UnitPrice=i.UnitPrice.ToString(),
+                    CreationDate=i.CreationDate.ToString()
                 });
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
             {
                 query = query.Where(i => i.Name.Contains(searchModel.Name));
             }
+
             if (!string.IsNullOrWhiteSpace(searchModel.Code))
             {
                 query = query.Where(i => i.Code.Contains(searchModel.Code));
             }
-            if(searchModel.ProductCategoryId != 0)
+
+            if (searchModel.ProductCategoryId != 0)
             {
                 query = query.Where(i => i.PrductCategoryId == searchModel.ProductCategoryId);
             }
-            return query.ToList();
+
+            return query.OrderByDescending(i => i.Id).ToList();
+
+        }
+
+         public List<ProductViewModel> GetAll()
+        {
+            return _shopContext.Products
+                .Include(i => i.ProductCategory)
+                .Select(i => new ProductViewModel
+                {
+                    Id = i.Id,
+                    Name = i.Name,
+                    Code = i.Code,
+                    ProductCategory = i.ProductCategory.Name,
+                    PrductCategoryId = i.ProductCategoryId
+                }).ToList();
         }
     }
 }

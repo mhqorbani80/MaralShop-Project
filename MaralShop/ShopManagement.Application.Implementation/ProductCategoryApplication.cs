@@ -50,6 +50,12 @@ namespace ShopManagement.Application.Implementation
             return operation.IsSuccess();
         }
 
+        public List<ProductCateoryViewModel> GetAll()
+        {
+            return _productCategoryRepository.GetAll();
+
+        }
+
         public EditProductCategory GetDetails(long id)
         {
            return _productCategoryRepository.GetDetails(id);

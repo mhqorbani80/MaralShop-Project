@@ -13,7 +13,7 @@ namespace ShopManagement.Application.Implementation
             _productRepository = productRepository;
         }
 
-        public OperationResult Create(Createproduct command)
+        public OperationResult Create(CreateProduct command)
         {
             var operation = new OperationResult();
             if (_productRepository.Exists(i => i.Name == command.Name))
@@ -54,6 +54,7 @@ namespace ShopManagement.Application.Implementation
             return operation.IsSuccess();
         }
 
+
         public EditProduct GetDetails(long id)
         {
             return _productRepository.GetDetails(id);
@@ -84,6 +85,10 @@ namespace ShopManagement.Application.Implementation
             product.NotIsStock();
             _productRepository.Save();
             return operation.IsSuccess();
+        }
+        public List<ProductViewModel> GetAll()
+        {
+            return _productRepository.GetAll();
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
