@@ -18,7 +18,7 @@ namespace ShopManagement.Application.Implementation
             var operation=new OperationResult();
             if (_productCategoryRepository.Exists(i => i.Name == command.Name))
             {
-                return operation.IsFaild("این نام قبلا در دیتابیس ذخیره شده است. مجدد تلاش فرمایید.");
+                return operation.IsFaild(ApplicationMessage.DuplicatedData);
             }
 
             var slug=command.Slug.Slugify();
@@ -36,11 +36,11 @@ namespace ShopManagement.Application.Implementation
             var productCategory = _productCategoryRepository.GetBy(command.Id);
             if(productCategory == null)
             {
-                return operation.IsFaild("دیتا مورد نظر یافت نشد. مجدد تلاش فرمایید");
+                return operation.IsFaild(ApplicationMessage.NotFountData);
             }
             if(_productCategoryRepository.Exists(i=>i.Name == command.Name && i.Id != command.Id))
             {
-                return operation.IsFaild("این نام قبلا در دیتابیس ذخیره شده است. مجدد تلاش فرمایید.");
+                return operation.IsFaild(ApplicationMessage.DuplicatedData);
             }
             var slug = command.Slug.Slugify();
             productCategory.Edit(command.Name, command.Description, command.Picture,
