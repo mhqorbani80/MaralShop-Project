@@ -15,6 +15,7 @@ namespace _0_Framework.Domain
         public void Create(T entity)
         {
             _dbContext.Add<T>(entity);
+            Save();
         }
 
         public bool Exists(Expression<Func<T, bool>> expression)

@@ -20,10 +20,10 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "https://localhost:7270/Administration/" 
+      "launchUrl": "/administration/shop/productcategory",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
+      }
     }
   }
 }
