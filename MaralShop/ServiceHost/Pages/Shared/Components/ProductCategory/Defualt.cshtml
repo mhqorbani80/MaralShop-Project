@@ -1,0 +1,40 @@
+﻿@using _MaralShopQuery.Contacts.ProductCategroy
+@model List<ProductCategoryQueryModel>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="category-area section-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!--=======  category wrapper  =======-->
+                <div class="category-wrapper">
+                    <div class="row row-10 masonry-category-layout">
+                        @foreach (var i in Model)
+                        {
+                            <div class="col-lg-4 col-sm-6 grid-item">
+                                <!--=======  single category item  =======-->
+                                <div class="single-category-item">
+                                    <div class="single-category-item__image">
+                                        <a asp-page="/ProductCategory" asp-route-id="@i.Slug">
+                                            <img src="@i.Picture" class="img-fluid" alt="@i.PictureAlt" title="@i.PictureTitle">
+                                        </a>
+                                    </div>
+                                    <div class="single-category-item__content">
+                                        <h3 class="title">@i.Name</h3>
+                                        <a asp-page="/ProductCategory" asp-route-id="@i.Slug">
+                                            <i class="ion-android-arrow-dropleft-circle"></i> خرید
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <!--=======  End of category wrapper  =======-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -14,6 +14,7 @@
     <ProjectReference Include="..\ShopManagement.Application.Contracts\ShopManagement.Application.Contracts.csproj" />
     <ProjectReference Include="..\ShopManagement.Application.Implementation\ShopManagement.Application.Implementation.csproj" />
     <ProjectReference Include="..\ShopManagement.Infrastructure.EfCore\ShopManagement.Infrastructure.EfCore.csproj" />
+    <ProjectReference Include="..\_MaralShopQuery\_MaralShopQuery.csproj" />
   </ItemGroup>
 
 </Project>

@@ -663,6 +663,19 @@
         "runtime": {
           "bin/placeholder/ShopManagement.Infrastructure.EfCore.dll": {}
         }
+      },
+      "_MaralShopQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ShopManagement.Infrastructure.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/_MaralShopQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/_MaralShopQuery.dll": {}
+        }
       }
     }
   },
@@ -1852,6 +1865,11 @@
       "type": "project",
       "path": "../ShopManagement.Infrastructure.EfCore/ShopManagement.Infrastructure.EfCore.csproj",
       "msbuildProject": "../ShopManagement.Infrastructure.EfCore/ShopManagement.Infrastructure.EfCore.csproj"
+    },
+    "_MaralShopQuery/1.0.0": {
+      "type": "project",
+      "path": "../_MaralShopQuery/_MaralShopQuery.csproj",
+      "msbuildProject": "../_MaralShopQuery/_MaralShopQuery.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1859,7 +1877,8 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0",
       "ShopManagement.Application.Contracts >= 1.0.0",
       "ShopManagement.Application.Implementation >= 1.0.0",
-      "ShopManagement.Infrastructure.EfCore >= 1.0.0"
+      "ShopManagement.Infrastructure.EfCore >= 1.0.0",
+      "_MaralShopQuery >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1902,6 +1921,9 @@
             },
             "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
               "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\ShopManagement.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+            },
+            "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\_MaralShopQuery\\_MaralShopQuery.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\_MaralShopQuery\\_MaralShopQuery.csproj"
             }
           }
         }

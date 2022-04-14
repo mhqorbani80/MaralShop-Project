@@ -11,7 +11,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "ShopManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Application.Implementation": "1.0.0",
-          "ShopManagement.Infrastructure.EfCore": "1.0.0"
+          "ShopManagement.Infrastructure.EfCore": "1.0.0",
+          "_MaralShopQuery": "1.0.0"
         },
         "runtime": {
           "ShopManagement.Configuration.dll": {}
@@ -502,6 +503,14 @@
         "runtime": {
           "ShopManagement.Infrastructure.EfCore.dll": {}
         }
+      },
+      "_MaralShopQuery/1.0.0": {
+        "dependencies": {
+          "ShopManagement.Infrastructure.EfCore": "1.0.0"
+        },
+        "runtime": {
+          "_MaralShopQuery.dll": {}
+        }
       }
     }
   },
@@ -812,6 +821,11 @@
       "sha512": ""
     },
     "ShopManagement.Infrastructure.EfCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "_MaralShopQuery/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -71,3 +71,5 @@ C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHos
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\obj\Debug\net6.0\ServiceHost.genruntimeconfig.cache
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\_MaralShopQuery.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\_MaralShopQuery.pdb

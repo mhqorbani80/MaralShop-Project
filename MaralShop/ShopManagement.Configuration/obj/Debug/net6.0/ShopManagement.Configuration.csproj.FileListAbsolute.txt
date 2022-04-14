@@ -21,3 +21,5 @@ C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManage
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\obj\Debug\net6.0\ShopManagement.Configuration.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\obj\Debug\net6.0\ref\ShopManagement.Configuration.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\obj\Debug\net6.0\ShopManagement.Configuration.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\_MaralShopQuery.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\_MaralShopQuery.pdb
