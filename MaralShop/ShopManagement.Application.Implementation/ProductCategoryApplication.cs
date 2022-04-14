@@ -50,9 +50,9 @@ namespace ShopManagement.Application.Implementation
             return operation.IsSuccess();
         }
 
-        public List<ProductCateoryViewModel> GetAll()
+        public List<ProductCateoryViewModel> GetproductCategories()
         {
-            return _productCategoryRepository.GetAll();
+            return _productCategoryRepository.GetproductCategories();
 
         }
 

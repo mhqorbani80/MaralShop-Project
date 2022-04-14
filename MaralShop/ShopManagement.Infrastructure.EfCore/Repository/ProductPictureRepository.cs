@@ -35,7 +35,8 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
                 Id=i.Id,
                 Picture=i.Picture,
                 Product=i.Product.Name,
-                ProductId=i.ProductId
+                ProductId=i.ProductId,
+                CreationDate=i.CreationDate.ToString()
             });
             if(searchModel.ProductId != 0)
             {

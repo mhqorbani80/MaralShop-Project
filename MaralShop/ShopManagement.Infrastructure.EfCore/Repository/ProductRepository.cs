@@ -68,7 +68,7 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
 
         }
 
-         public List<ProductViewModel> GetAll()
+         public List<ProductViewModel> GetProducts()
         {
             return _shopContext.Products
                 .Include(i => i.ProductCategory)

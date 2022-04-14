@@ -26,6 +26,7 @@ namespace ShopManagement.Application.Implementation
                 return operation.IsFaild(ApplicationMessage.DuplicatedData);
             }
             var productPicture = new ProductPicture(command.ProductId, command.Picture, command.PictureAlt, command.PictureTitle);
+            _productPictureRepository.Create(productPicture);
             _productPictureRepository.Save();
             return operation.IsSuccess();
         }

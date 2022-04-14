@@ -6,13 +6,13 @@ namespace ShopManagement.Domain.ProductPictureAgg
     public class ProductPicture : EntityBase
     {
         public string Picture { get; private set; }
-        public long PictureAlt { get; private set; }
-        public long PictureTitle { get; private set; }
+        public string PictureAlt { get; private set; }
+        public string PictureTitle { get; private set; }
         public bool IsRemove { get; private set; }
         public long ProductId { get; private set; }
         public Product Product { get; private set; }
 
-        public ProductPicture(long productId, string picture, long pictureAlt, long pictureTitle)
+        public ProductPicture(long productId, string picture, string pictureAlt, string pictureTitle)
         {
             ProductId = productId;
             Picture = picture;
@@ -20,7 +20,7 @@ namespace ShopManagement.Domain.ProductPictureAgg
             PictureTitle = pictureTitle;
             IsRemove = false;
         }
-        public void Edit(long productId, string picture, long pictureAlt, long pictureTitle)
+        public void Edit(long productId, string picture, string pictureAlt, string pictureTitle)
         {
             ProductId = productId;
             Picture = picture;

@@ -86,9 +86,9 @@ namespace ShopManagement.Application.Implementation
             _productRepository.Save();
             return operation.IsSuccess();
         }
-        public List<ProductViewModel> GetAll()
+        public List<ProductViewModel> GetProducts()
         {
-            return _productRepository.GetAll();
+            return _productRepository.GetProducts();
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
