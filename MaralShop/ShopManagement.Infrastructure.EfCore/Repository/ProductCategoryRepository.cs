@@ -1,7 +1,6 @@
 ﻿using _0_Framework.Domain;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
-using System.Linq.Expressions;
 
 namespace ShopManagement.Infrastructure.EfCore.Repository
 {
