@@ -10,6 +10,7 @@ C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShop
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\bin\Debug\net6.0\0_Framework.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\bin\Debug\net6.0\ShopManagement.Application.Contracts.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\bin\Debug\net6.0\ShopManagement.Domain.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\obj\Debug\net6.0\_MaralShopQuery.csproj.AssemblyReference.cache
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\obj\Debug\net6.0\_MaralShopQuery.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\obj\Debug\net6.0\_MaralShopQuery.AssemblyInfoInputs.cache
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\obj\Debug\net6.0\_MaralShopQuery.AssemblyInfo.cs
@@ -18,4 +19,3 @@ C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShop
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\obj\Debug\net6.0\_MaralShopQuery.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\obj\Debug\net6.0\ref\_MaralShopQuery.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\obj\Debug\net6.0\_MaralShopQuery.pdb
-C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\_MaralShopQuery\obj\Debug\net6.0\_MaralShopQuery.csproj.AssemblyReference.cache

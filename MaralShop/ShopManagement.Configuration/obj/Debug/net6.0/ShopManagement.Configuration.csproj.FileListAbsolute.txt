@@ -7,9 +7,11 @@ C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManage
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Application.Implementation.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Domain.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Infrastructure.EfCore.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\_MaralShopQuery.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Application.Contracts.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Application.Implementation.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Infrastructure.EfCore.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\_MaralShopQuery.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\0_Framework.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\ShopManagement.Domain.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\obj\Debug\net6.0\ShopManagement.Configuration.csproj.AssemblyReference.cache
@@ -21,5 +23,3 @@ C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManage
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\obj\Debug\net6.0\ShopManagement.Configuration.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\obj\Debug\net6.0\ref\ShopManagement.Configuration.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\obj\Debug\net6.0\ShopManagement.Configuration.pdb
-C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\_MaralShopQuery.dll
-C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ShopManagement.Configuration\bin\Debug\net6.0\_MaralShopQuery.pdb

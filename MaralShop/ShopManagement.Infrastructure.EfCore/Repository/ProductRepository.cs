@@ -1,4 +1,5 @@
-﻿using _0_Framework.Domain;
+﻿using _0_Framework.Application;
+using _0_Framework.Domain;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Domain.ProductAgg;
@@ -47,7 +48,7 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
                     UnitPrice=i.UnitPrice.ToString(),
                     ProductCategory = i.ProductCategory.Name,
                     PrductCategoryId = i.ProductCategoryId,
-                    CreationDate=i.CreationDate.ToString()
+                    CreationDate=i.CreationDate.ToFarsi()
                 });
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
             {

@@ -2,6 +2,7 @@
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Domain.ProductPictureAgg;
 using Microsoft.EntityFrameworkCore;
+using _0_Framework.Application;
 
 namespace ShopManagement.Infrastructure.EfCore.Repository
 {
@@ -36,7 +37,7 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
                 Picture=i.Picture,
                 Product=i.Product.Name,
                 ProductId=i.ProductId,
-                CreationDate=i.CreationDate.ToString()
+                CreationDate=i.CreationDate.ToFarsi()
             });
             if(searchModel.ProductId != 0)
             {

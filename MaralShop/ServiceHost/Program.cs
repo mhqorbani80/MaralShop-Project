@@ -1,3 +1,4 @@
+using DiscountManagement.Configuration;
 using ShopManagement.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,8 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 var connectionString = builder.Configuration.GetConnectionString("MaralShopDbContext");
-#region DependencyShopContext
+#region DependencyBootstrappers
 ShopBootstrapper.Configure(builder.Services, connectionString);
+DiscountBootstrapper.Configure(builder.Services, connectionString);
 #endregion
 
 var app = builder.Build();

@@ -40,7 +40,32 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "0e4a783e-3e22-48a7-bb6e-41c56c3fdc86": {
+      "ProjectGuid": "0e4a783e-3e22-48a7-bb6e-41c56c3fdc86",
+      "DisplayName": "_MaralShopQuery",
+      "ColorIndex": 7
+    },
+    "2509a37f-bdbb-4cb0-bb8d-5f9a113d9cf8": {
+      "ProjectGuid": "2509a37f-bdbb-4cb0-bb8d-5f9a113d9cf8",
+      "DisplayName": "DiscountManagement.Domain",
+      "ColorIndex": 8
+    },
+    "f1f47eef-bba6-450a-8540-f2da9ac371ca": {
+      "ProjectGuid": "f1f47eef-bba6-450a-8540-f2da9ac371ca",
+      "DisplayName": "DiscountManagement.Application.Contracts",
+      "ColorIndex": 9
+    },
+    "01e38997-dfa5-454a-8d7e-c26f07532cee": {
+      "ProjectGuid": "01e38997-dfa5-454a-8d7e-c26f07532cee",
+      "DisplayName": "DiscountManagement.Application.Implementation",
+      "ColorIndex": 10
+    },
+    "76b11058-5f17-427e-9ce6-f9de2bba9be5": {
+      "ProjectGuid": "76b11058-5f17-427e-9ce6-f9de2bba9be5",
+      "DisplayName": "DiscountManagement.Infrastructure.EfCore",
+      "ColorIndex": 11
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 12
 }
