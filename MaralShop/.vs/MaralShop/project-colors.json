@@ -65,7 +65,12 @@
       "ProjectGuid": "76b11058-5f17-427e-9ce6-f9de2bba9be5",
       "DisplayName": "DiscountManagement.Infrastructure.EfCore",
       "ColorIndex": 11
+    },
+    "11071024-d8a1-4f4f-a4f5-93a61989319c": {
+      "ProjectGuid": "11071024-d8a1-4f4f-a4f5-93a61989319c",
+      "DisplayName": "DiscountManagement.Configuration",
+      "ColorIndex": 12
     }
   },
-  "NextColorIndex": 12
+  "NextColorIndex": 13
 }

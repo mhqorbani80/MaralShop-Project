@@ -1,4 +1,5 @@
 using DiscountManagement.Configuration;
+using InventoryManagement.Infrastructure.Configuration;
 using ShopManagement.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,7 @@ var connectionString = builder.Configuration.GetConnectionString("MaralShopDbCon
 #region DependencyBootstrappers
 ShopBootstrapper.Configure(builder.Services, connectionString);
 DiscountBootstrapper.Configure(builder.Services, connectionString);
+InventoryBootstrapper.Configure(builder.Services, connectionString);
 #endregion
 
 var app = builder.Build();
