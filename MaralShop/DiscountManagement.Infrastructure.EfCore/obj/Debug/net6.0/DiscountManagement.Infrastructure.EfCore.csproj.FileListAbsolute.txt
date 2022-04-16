@@ -1,8 +1,3 @@
-C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.csproj.AssemblyReference.cache
-C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.AssemblyInfoInputs.cache
-C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.AssemblyInfo.cs
-C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\bin\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.deps.json
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\bin\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.runtimeconfig.json
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\bin\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.dll
@@ -20,6 +15,11 @@ C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountMa
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\bin\Debug\net6.0\DiscountManagement.Application.Contracts.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\bin\Debug\net6.0\ShopManagement.Application.Contracts.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\bin\Debug\net6.0\ShopManagement.Domain.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.csproj.CopyComplete
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\DiscountManagement.Infrastructure.EfCore.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Infrastructure.EfCore\obj\Debug\net6.0\ref\DiscountManagement.Infrastructure.EfCore.dll

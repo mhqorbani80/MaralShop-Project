@@ -70,7 +70,37 @@
       "ProjectGuid": "11071024-d8a1-4f4f-a4f5-93a61989319c",
       "DisplayName": "DiscountManagement.Configuration",
       "ColorIndex": 12
+    },
+    "53552d71-b7ab-4c19-b624-3e85c44e7d75": {
+      "ProjectGuid": "53552d71-b7ab-4c19-b624-3e85c44e7d75",
+      "DisplayName": "InventoryManagement.Domain",
+      "ColorIndex": 13
+    },
+    "25281b93-9bce-4f76-a586-2f8a2ab6015d": {
+      "ProjectGuid": "25281b93-9bce-4f76-a586-2f8a2ab6015d",
+      "DisplayName": "InventoryManagement.Application.Contracts",
+      "ColorIndex": 14
+    },
+    "7da4c4e4-875f-48c6-a3d1-76bd2059c0ac": {
+      "ProjectGuid": "7da4c4e4-875f-48c6-a3d1-76bd2059c0ac",
+      "DisplayName": "InventoryManagement.Application.Implementation",
+      "ColorIndex": 15
+    },
+    "4ec97c16-52a1-45c9-96a5-8166de3ea82b": {
+      "ProjectGuid": "4ec97c16-52a1-45c9-96a5-8166de3ea82b",
+      "DisplayName": "InventoryManagement.Infrastructure.EfCore",
+      "ColorIndex": 0
+    },
+    "605fde27-f0db-48fd-88cd-debc0b270e84": {
+      "ProjectGuid": "605fde27-f0db-48fd-88cd-debc0b270e84",
+      "DisplayName": "InventoryManagement.Infrastructure.Configuration",
+      "ColorIndex": 1
+    },
+    "298dda0a-ba87-41d0-b744-ba5cf52b80a3": {
+      "ProjectGuid": "298dda0a-ba87-41d0-b744-ba5cf52b80a3",
+      "DisplayName": "InventoryManagement.Infrastructure.EfCore",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 13
+  "NextColorIndex": 3
 }

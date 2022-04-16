@@ -17,7 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\InventoryManagement.Application.Contracts\InventoryManagement.Application.Contracts.csproj" />
     <ProjectReference Include="..\InventoryManagement.Application.Implementation\InventoryManagement.Application.Implementation.csproj" />
-    <ProjectReference Include="..\InventoryManagement.EfCore\InventoryManagement.EfCore.csproj" />
+    <ProjectReference Include="..\InventoryManagement.Infrastructure.EfCore\InventoryManagement.Infrastructure.EfCore.csproj" />
   </ItemGroup>
 
 </Project>

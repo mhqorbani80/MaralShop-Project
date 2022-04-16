@@ -649,7 +649,7 @@
           "bin/placeholder/InventoryManagement.Domain.dll": {}
         }
       },
-      "InventoryManagement.EfCore/1.0.0": {
+      "InventoryManagement.Infrastructure.EfCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -659,10 +659,10 @@
           "ShopManagement.Infrastructure.EfCore": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/InventoryManagement.EfCore.dll": {}
+          "bin/placeholder/InventoryManagement.Infrastructure.EfCore.dll": {}
         },
         "runtime": {
-          "bin/placeholder/InventoryManagement.EfCore.dll": {}
+          "bin/placeholder/InventoryManagement.Infrastructure.EfCore.dll": {}
         }
       },
       "ShopManagement.Application.Contracts/1.0.0": {
@@ -1891,10 +1891,10 @@
       "path": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj",
       "msbuildProject": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj"
     },
-    "InventoryManagement.EfCore/1.0.0": {
+    "InventoryManagement.Infrastructure.EfCore/1.0.0": {
       "type": "project",
-      "path": "../InventoryManagement.EfCore/InventoryManagement.EfCore.csproj",
-      "msbuildProject": "../InventoryManagement.EfCore/InventoryManagement.EfCore.csproj"
+      "path": "../InventoryManagement.Infrastructure.EfCore/InventoryManagement.Infrastructure.EfCore.csproj",
+      "msbuildProject": "../InventoryManagement.Infrastructure.EfCore/InventoryManagement.Infrastructure.EfCore.csproj"
     },
     "ShopManagement.Application.Contracts/1.0.0": {
       "type": "project",
@@ -1916,7 +1916,7 @@
     "net6.0": [
       "InventoryManagement.Application.Contracts >= 1.0.0",
       "InventoryManagement.Application.Implementation >= 1.0.0",
-      "InventoryManagement.EfCore >= 1.0.0",
+      "InventoryManagement.Infrastructure.EfCore >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0"
     ]
   },
@@ -1958,8 +1958,8 @@
             "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\InventoryManagement.Application.Implementation\\InventoryManagement.Application.Implementation.csproj": {
               "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\InventoryManagement.Application.Implementation\\InventoryManagement.Application.Implementation.csproj"
             },
-            "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\InventoryManagement.EfCore\\InventoryManagement.EfCore.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\InventoryManagement.EfCore\\InventoryManagement.EfCore.csproj"
+            "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\InventoryManagement.Infrastructure.EfCore\\InventoryManagement.Infrastructure.EfCore.csproj"
             }
           }
         }

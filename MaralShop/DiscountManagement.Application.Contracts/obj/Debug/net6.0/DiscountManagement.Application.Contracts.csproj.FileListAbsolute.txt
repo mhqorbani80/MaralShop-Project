@@ -3,7 +3,9 @@ C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountMa
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\bin\Debug\net6.0\ref\DiscountManagement.Application.Contracts.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\bin\Debug\net6.0\DiscountManagement.Application.Contracts.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\bin\Debug\net6.0\0_Framework.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\bin\Debug\net6.0\ShopManagement.Application.Contracts.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\bin\Debug\net6.0\0_Framework.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\bin\Debug\net6.0\ShopManagement.Application.Contracts.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\obj\Debug\net6.0\DiscountManagement.Application.Contracts.csproj.AssemblyReference.cache
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\obj\Debug\net6.0\DiscountManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\obj\Debug\net6.0\DiscountManagement.Application.Contracts.AssemblyInfoInputs.cache
@@ -13,5 +15,3 @@ C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountMa
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\obj\Debug\net6.0\DiscountManagement.Application.Contracts.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\obj\Debug\net6.0\ref\DiscountManagement.Application.Contracts.dll
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\obj\Debug\net6.0\DiscountManagement.Application.Contracts.pdb
-C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\bin\Debug\net6.0\ShopManagement.Application.Contracts.dll
-C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\DiscountManagement.Application.Contracts\bin\Debug\net6.0\ShopManagement.Application.Contracts.pdb

@@ -22,7 +22,7 @@ namespace InventoryManagement.Domain.InventoryAgg
         public void Edit(long productId, double unitPrice)
         {
             ProductId = productId;
-            UnitPrice = unitPrice
+            UnitPrice = unitPrice;
         }
 
         public long CalculateCurrentCount()

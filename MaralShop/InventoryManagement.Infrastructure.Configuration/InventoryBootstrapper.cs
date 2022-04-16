@@ -1,8 +1,8 @@
 ﻿using InventoryManagement.Application.Contracts.Inventory;
 using InventoryManagement.Application.Implementation;
 using InventoryManagement.Domain.InventoryAgg;
-using InventoryManagement.EfCore;
-using InventoryManagement.EfCore.Repository;
+using InventoryManagement.Infrastructure.EfCore;
+using InventoryManagement.Infrastructure.EfCore.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 

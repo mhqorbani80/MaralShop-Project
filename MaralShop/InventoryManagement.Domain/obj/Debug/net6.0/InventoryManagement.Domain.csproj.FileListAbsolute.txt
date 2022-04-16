@@ -1,0 +1,17 @@
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\bin\Debug\net6.0\InventoryManagement.Domain.deps.json
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\bin\Debug\net6.0\InventoryManagement.Domain.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\bin\Debug\net6.0\ref\InventoryManagement.Domain.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\bin\Debug\net6.0\InventoryManagement.Domain.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\bin\Debug\net6.0\0_Framework.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\bin\Debug\net6.0\InventoryManagement.Application.Contracts.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\bin\Debug\net6.0\0_Framework.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\bin\Debug\net6.0\InventoryManagement.Application.Contracts.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\obj\Debug\net6.0\InventoryManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\obj\Debug\net6.0\InventoryManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\obj\Debug\net6.0\InventoryManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\obj\Debug\net6.0\InventoryManagement.Domain.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\obj\Debug\net6.0\InventoryManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\obj\Debug\net6.0\InventoryManagement.Domain.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\obj\Debug\net6.0\InventoryManagement.Domain.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\obj\Debug\net6.0\ref\InventoryManagement.Domain.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\InventoryManagement.Domain\obj\Debug\net6.0\InventoryManagement.Domain.pdb
