@@ -95,5 +95,10 @@ namespace InventoryManagement.Application.Implementation
             return _inventoryRepository.Search(searchModel);
 
         }
+
+        public List<InventoryOperationModel> GetOperation(long inventoryId)
+        {
+            return _inventoryRepository.GetOperation(inventoryId);
+        }
     }
 }

@@ -23,7 +23,6 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
                     Id = i.Id,
                     Name = i.Name,
                     Code = i.Code,
-                    UnitPrice=i.UnitPrice,
                     ShortDescription = i.ShortDescription,
                     Description = i.Description,
                     Picture=i.Picture,
@@ -45,7 +44,6 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
                     Id = i.Id,
                     Name = i.Name,
                     Code = i.Code,
-                    UnitPrice=i.UnitPrice.ToString(),
                     ProductCategory = i.ProductCategory.Name,
                     PrductCategoryId = i.ProductCategoryId,
                     CreationDate=i.CreationDate.ToFarsi()

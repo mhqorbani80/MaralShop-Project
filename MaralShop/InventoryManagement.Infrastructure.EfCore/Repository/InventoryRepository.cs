@@ -1,4 +1,5 @@
-﻿using _0_Framework.Domain;
+﻿using _0_Framework.Application;
+using _0_Framework.Domain;
 using InventoryManagement.Application.Contracts.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
 using ShopManagement.Infrastructure.EfCore;
@@ -10,9 +11,10 @@ namespace InventoryManagement.Infrastructure.EfCore.Repository
         private readonly ShopContext _shopContext;
         private readonly InventoryContext _inventoryContext;
 
-        public InventoryRepository(InventoryContext inventoryContext) :base(inventoryContext)
+        public InventoryRepository(InventoryContext inventoryContext, ShopContext shopContext) : base(inventoryContext)
         {
             _inventoryContext = inventoryContext;
+            _shopContext = shopContext;
         }
 
         public EditInventory GetDetails(long id)
@@ -22,6 +24,22 @@ namespace InventoryManagement.Infrastructure.EfCore.Repository
                 ProductId=i.ProductId,
                 UnitPrice=i.UnitPrice,
             }).FirstOrDefault(i => i.Id == id);
+        }
+
+        public List<InventoryOperationModel> GetOperation(long inventoryId)
+        {
+            var inventory = _inventoryContext.Inventories.FirstOrDefault(i => i.Id == inventoryId);
+           return inventory.InventoryOperations.Select(i=>new InventoryOperationModel
+            {
+                Id=i.Id,
+                Count=i.Count,
+                Description=i.Description,
+                OperatorId=i.OperatorId,
+                OrderId=i.OrderId,
+                Operator="مدیر سیستم",
+                Operation=i.Operation,
+                CurrentCount=i.CurrentCount
+            }).ToList();
         }
 
         public Inventory GetProduct(long productId)
@@ -38,13 +56,14 @@ namespace InventoryManagement.Infrastructure.EfCore.Repository
                 UnitPrice=i.UnitPrice,
                 ProductId=i.ProductId,
                 InStock=i.InStock,
-                CurrentCount=i.CalculateCurrentCount()
+                CurrentCount=i.CalculateCurrentCount(),
+                CreationDate=i.CreationDate.ToFarsi()
             });
             if(searchModel.ProductId > 0)
             {
                 query= query.Where(i=>i.ProductId==searchModel.ProductId);
             }
-            if (!searchModel.InStock)
+            if (searchModel.InStock)
             {
                 query= query.Where(i=> !i.InStock);
             }

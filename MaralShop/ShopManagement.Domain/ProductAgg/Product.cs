@@ -8,8 +8,6 @@ namespace ShopManagement.Domain.ProductAgg
     {
         public string Name { get; private set; }
         public string Code { get; private set; }
-        public double UnitPrice { get; private set; }
-        public bool IsInStock { get; private set; }
         public string ShortDescription { get; private set; }
         public string Description { get; private set; }
         public string Picture { get; private set; }
@@ -27,13 +25,12 @@ namespace ShopManagement.Domain.ProductAgg
             ProductPictures = new List<ProductPicture>();
         }
 
-        public Product(string name, string code, double unitPrice, string shortDescription, string description, string picture,
+        public Product(string name, string code, string shortDescription, string description, string picture,
             string pictureAlt, string pictureTitle, string keywords, string metaDescription,
             string slug, long productCategoryId)
         {
             Name = name;
             Code = code;
-            UnitPrice = unitPrice;
             ShortDescription = shortDescription;
             Description = description;
             Picture = picture;
@@ -45,13 +42,12 @@ namespace ShopManagement.Domain.ProductAgg
             ProductCategoryId = productCategoryId;
         }
 
-        public void Edit(string name, string code, double unitPrice, string shortDescription, string description, string picture,
+        public void Edit(string name, string code, string shortDescription, string description, string picture,
          string pictureAlt, string pictureTitle, string keywords, string metaDescription,
          string slug, long productCategoryId)
         {
             Name = name;
             Code = code;
-            UnitPrice = unitPrice;
             ShortDescription = shortDescription;
             Description = description;
             Picture = picture;
@@ -61,15 +57,6 @@ namespace ShopManagement.Domain.ProductAgg
             MetaDescription = metaDescription;
             Slug = slug;
             ProductCategoryId = productCategoryId;
-        }
-
-        public void IsStock()
-        {
-            IsInStock = true;
-        }
-        public void NotIsStock()
-        {
-            IsInStock = false;
         }
     }
 }

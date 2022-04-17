@@ -22,7 +22,7 @@ namespace ShopManagement.Application.Implementation
             }
 
             var slug = command.Slug.Slugify();
-            var product = new Product(command.Name,command.Code,command.UnitPrice,command.ShortDescription,command.Description,
+            var product = new Product(command.Name,command.Code,command.ShortDescription,command.Description,
                 command.Picture,command.PictureAlt,command.PictureTitle,
                 command.Keywords,command.MetaDescription,slug,command.ProductCategoryId);
 
@@ -45,7 +45,7 @@ namespace ShopManagement.Application.Implementation
                 return operation.IsFaild(ApplicationMessage.DuplicatedData);
             }
             var slug = command.Slug.Slugify();
-            product.Edit(command.Name, command.Code, command.UnitPrice, command.ShortDescription, command.Description,
+            product.Edit(command.Name, command.Code, command.ShortDescription, command.Description,
                 command.Picture, command.PictureAlt, command.PictureTitle,
                 command.Keywords, command.MetaDescription, slug, command.ProductCategoryId);
 
@@ -58,33 +58,6 @@ namespace ShopManagement.Application.Implementation
         public EditProduct GetDetails(long id)
         {
             return _productRepository.GetDetails(id);
-        }
-
-        public OperationResult IsStock(long id)
-        {
-            var operation = new OperationResult();
-            var product = _productRepository.GetBy(id);
-            if (product == null)
-            {
-                return operation.IsFaild(ApplicationMessage.NotFountData);
-            }
-            product.IsStock();
-            _productRepository.Save();
-            return operation.IsSuccess();
-        }
-
-        public OperationResult NotIsStock(long id)
-        {
-
-            var operation = new OperationResult();
-            var product = _productRepository.GetBy(id);
-            if (product == null)
-            {
-                return operation.IsFaild(ApplicationMessage.NotFountData);
-            }
-            product.NotIsStock();
-            _productRepository.Save();
-            return operation.IsSuccess();
         }
         public List<ProductViewModel> GetProducts()
         {
