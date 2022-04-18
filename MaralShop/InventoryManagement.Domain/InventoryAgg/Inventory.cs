@@ -59,6 +59,7 @@ namespace InventoryManagement.Domain.InventoryAgg
         public long OrderId { get;  set; }
         public long InventoryId { get;  set; }
         public Inventory Inventory { get; set; }
+        public DateTime OperationDate { get; set; }
 
         public InventoryOperation(bool operation, long count, long operatorId,
             long currentCount, string description, long orderId, long inventoryId)
@@ -70,6 +71,7 @@ namespace InventoryManagement.Domain.InventoryAgg
             Description = description;
             OrderId = orderId;
             InventoryId = inventoryId;
+            OperationDate = DateTime.Now;
         }
     }
 }

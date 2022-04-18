@@ -74,6 +74,9 @@ namespace InventoryManagement.Infrastructure.EfCore.Migrations
                             b1.Property<bool>("Operation")
                                 .HasColumnType("bit");
 
+                            b1.Property<DateTime>("OperationDate")
+                                .HasColumnType("datetime2");
+
                             b1.Property<long>("OperatorId")
                                 .HasColumnType("bigint");
 

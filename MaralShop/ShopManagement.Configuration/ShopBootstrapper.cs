@@ -1,4 +1,5 @@
-﻿using _MaralShopQuery.Contacts.ProductCategroy;
+﻿using _MaralShopQuery.Contacts.Product;
+using _MaralShopQuery.Contacts.ProductCategroy;
 using _MaralShopQuery.Contacts.Slide;
 using _MaralShopQuery.Query;
 using Microsoft.EntityFrameworkCore;
@@ -35,6 +36,7 @@ namespace ShopManagement.Configuration
 
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
+            services.AddTransient<IProductQuery, ProductQuery>();
 
             services.AddDbContext<ShopContext>(options =>
             {
