@@ -36,6 +36,7 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
                 Id = i.Id,
                 Name = i.Name,
                 Picture = i.Picture,
+                ProductsCount= i.Products.Count().ToString(),
                 CreationDate = i.CreationDate.ToFarsi()
             });
 

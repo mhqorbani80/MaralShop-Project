@@ -64,7 +64,7 @@
                                  @foreach(var productPicture in Model.ProductPictures){
                                     <tr>
                                         <td>@productPicture.Id</td>
-                                        <td><img src="@productPicture.Picture" width="100px" height="100px"></img></td>
+                                        <td><img src="~/Pictures/@productPicture.Picture" width="100px" height="100px"></img></td>
                                         <td>@productPicture.Product</td>
                                         <td>@productPicture.CreationDate</td>
                                         <td>

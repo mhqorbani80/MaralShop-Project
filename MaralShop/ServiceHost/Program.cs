@@ -1,5 +1,7 @@
+using _0_Framework.Application;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastructure.Configuration;
+using ServiceHost;
 using ShopManagement.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,8 @@ ShopBootstrapper.Configure(builder.Services, connectionString);
 DiscountBootstrapper.Configure(builder.Services, connectionString);
 InventoryBootstrapper.Configure(builder.Services, connectionString);
 #endregion
+
+builder.Services.AddTransient<IFileUpload,FileUpload>();
 
 var app = builder.Build();
 

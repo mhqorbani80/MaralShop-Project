@@ -25,7 +25,6 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
                     Code = i.Code,
                     ShortDescription = i.ShortDescription,
                     Description = i.Description,
-                    Picture=i.Picture,
                     PictureAlt=i.PictureAlt,
                     PictureTitle=i.PictureTitle,
                     Keywords=i.Keywords,
@@ -79,6 +78,13 @@ namespace ShopManagement.Infrastructure.EfCore.Repository
                     ProductCategory = i.ProductCategory.Name,
                     PrductCategoryId = i.ProductCategoryId
                 }).ToList();
+        }
+
+        public Product GetWithProductCategories(long id)
+        {
+            return _shopContext.Products
+                .Include(i => i.ProductCategory)
+                .FirstOrDefault(i => i.Id == id);
         }
     }
 }

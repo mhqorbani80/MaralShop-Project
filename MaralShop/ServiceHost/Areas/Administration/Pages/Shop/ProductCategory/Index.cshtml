@@ -54,6 +54,7 @@
                                     <th>#</th>
                                     <th>عکس</th>
                                     <th>نام</th>
+                                    <th>تعداد کالا های ثبت شده</th>
                                     <th>تاریخ تولید</th>
                                     <th>عملیات</th>
                                 </tr>
@@ -64,6 +65,7 @@
                                         <td>@productCategory.Id</td>
                                         <td><img src="@productCategory.Picture" width="100px" height="100px"></img></td>
                                         <td>@productCategory.Name</td>
+                                        <td>@productCategory.ProductsCount</td>
                                         <td>@productCategory.CreationDate</td>
                                         <td>
                                             <a class="btn btn-warning" href="#showmodal=@Url.Page("./Index", "Edit",new {id=productCategory.Id})">ویرایش</a>

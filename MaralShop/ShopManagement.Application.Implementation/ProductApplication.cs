@@ -7,10 +7,12 @@ namespace ShopManagement.Application.Implementation
     public class ProductApplication : IProductApplication
     {
         private readonly IProductRepository _productRepository;
+        private readonly IFileUpload _fileUpload;
 
-        public ProductApplication(IProductRepository productRepository)
+        public ProductApplication(IProductRepository productRepository, IFileUpload fileUpload)
         {
             _productRepository = productRepository;
+            _fileUpload = fileUpload;
         }
 
         public OperationResult Create(CreateProduct command)
@@ -20,10 +22,11 @@ namespace ShopManagement.Application.Implementation
             {
                 return operation.IsFaild(ApplicationMessage.DuplicatedData);
             }
-
+            var pathPicture= $"{command.Slug}";
+            var path = _fileUpload.Upload(command.Picture, pathPicture);
             var slug = command.Slug.Slugify();
             var product = new Product(command.Name,command.Code,command.ShortDescription,command.Description,
-                command.Picture,command.PictureAlt,command.PictureTitle,
+                path, command.PictureAlt,command.PictureTitle,
                 command.Keywords,command.MetaDescription,slug,command.ProductCategoryId);
 
             _productRepository.Create(product);
@@ -44,9 +47,11 @@ namespace ShopManagement.Application.Implementation
             {
                 return operation.IsFaild(ApplicationMessage.DuplicatedData);
             }
+            var pathPicture = $"{command.Slug}";
+            var path = _fileUpload.Upload(command.Picture, pathPicture);
             var slug = command.Slug.Slugify();
             product.Edit(command.Name, command.Code, command.ShortDescription, command.Description,
-                command.Picture, command.PictureAlt, command.PictureTitle,
+                path, command.PictureAlt, command.PictureTitle,
                 command.Keywords, command.MetaDescription, slug, command.ProductCategoryId);
 
             _productRepository.Save();
