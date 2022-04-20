@@ -1,9 +1,11 @@
 ﻿using _0_Framework.Application;
+using _MaralShopQuery.Contacts.Comment;
 using _MaralShopQuery.Contacts.Product;
 using _MaralShopQuery.Contacts.ProductPicture;
 using DiscountManagement.Infrastructure.EfCore;
 using InventoryManagement.Infrastructure.EfCore;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EfCore;
 
@@ -32,6 +34,7 @@ namespace _MaralShopQuery.Query
                 .Select(i => new { i.ProductId, i.DiscountRate }).ToList();
 
             var products=_shopContext.Products
+                .Include(i=>i.Comments)
                 .Select(product => new ProductQueryModel()
                  {
                      Id = product.Id,
@@ -40,7 +43,8 @@ namespace _MaralShopQuery.Query
                      PictureAlt = product.PictureAlt,
                      PictureTitle = product.PictureTitle,
                      slug = product.Slug,
-                     ProductCategory = product.ProductCategory.Name
+                     ProductCategory = product.ProductCategory.Name,
+                     CommentsCount = product.Comments.Count(),
                  }).OrderByDescending(i=>i.Id).Take(6).ToList();
 
             foreach (var product in products)
@@ -82,8 +86,11 @@ namespace _MaralShopQuery.Query
                     PictureAlt = product.PictureAlt,
                     PictureTitle = product.PictureTitle,
                     slug = product.Slug,
+                    MetaDescription = product.MetaDescription,
+                    Keywords = product.Keywords,
                     ProductCategory = product.ProductCategory.Name,
-                    ProductPictures = MapProductPicture(product.ProductPictures)
+                    ProductPictures = MapProductPicture(product.ProductPictures),
+                    Comments = MapComments(product.Comments)
                 }).FirstOrDefault(i=>i.slug==slug);
 
             if (product ==null)
@@ -109,6 +116,21 @@ namespace _MaralShopQuery.Query
             product.PriceWithDiscount = resultPriceWithDiscount.ToMoney();
 
             return product;
+        }
+
+        private static List<CommentQueryModel> MapComments(List<Comment> comments)
+        {
+            return comments
+                .Where(i=> !i.IsCancel)
+                .Where(i=>i.IsConfirm)
+               .Select(i => new CommentQueryModel
+               {
+                   Name= i.Name,
+                   Email= i.Email,
+                   Message=i.Message,
+                   Cancel=i.IsCancel,
+                   Confirm=i.IsConfirm
+               }).ToList();
         }
 
         private static List<ProductPictureQueryModel> MapProductPicture(List<ProductPicture> productPictures)

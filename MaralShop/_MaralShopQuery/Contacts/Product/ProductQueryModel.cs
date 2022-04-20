@@ -1,4 +1,5 @@
-﻿using _MaralShopQuery.Contacts.ProductPicture;
+﻿using _MaralShopQuery.Contacts.Comment;
+using _MaralShopQuery.Contacts.ProductPicture;
 
 namespace _MaralShopQuery.Contacts.Product
 {
@@ -23,6 +24,8 @@ namespace _MaralShopQuery.Contacts.Product
         public bool HasDiscount { get; set; }
         public string DiscountExpireDate { get; set; }
         public bool IsInStock { get; set; }
+        public long CommentsCount { get; set; }
         public List<ProductPictureQueryModel> ProductPictures { get; set; }
+        public List<CommentQueryModel> Comments { get; set; }
     }
 }
