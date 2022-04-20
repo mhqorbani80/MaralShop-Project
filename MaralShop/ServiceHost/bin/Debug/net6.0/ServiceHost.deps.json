@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "ServiceHost/1.0.0": {
         "dependencies": {
+          "BlogManagement.Application.Contracts": "1.0.0",
+          "BlogManagement.Infrastructure.Coonfiguration": "1.0.0",
           "DiscountManagement.Configuration": "1.0.0",
           "InventoryManagement.Infrastructure.Configuration": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.4",
@@ -1374,6 +1376,53 @@
           "0_Framework.dll": {}
         }
       },
+      "BlogManagement.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "BlogManagement.Application.Contracts.dll": {}
+        }
+      },
+      "BlogManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "BlogManagement.Application.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "BlogManagement.Domain.dll": {}
+        }
+      },
+      "BlogManagement.Infrastructure.Coonfiguration/1.0.0": {
+        "dependencies": {
+          "BlogManagement.Application.Contracts": "1.0.0",
+          "BlogManagement.Infrastructure.EfCore": "1.0.0",
+          "BlogMangement.Application.Inplementation": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "BlogManagement.Infrastructure.Coonfiguration.dll": {}
+        }
+      },
+      "BlogManagement.Infrastructure.EfCore/1.0.0": {
+        "dependencies": {
+          "BlogManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+        },
+        "runtime": {
+          "BlogManagement.Infrastructure.EfCore.dll": {}
+        }
+      },
+      "BlogMangement.Application.Inplementation/1.0.0": {
+        "dependencies": {
+          "BlogManagement.Application.Contracts": "1.0.0",
+          "BlogManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "BlogMangement.Application.Inplementation.dll": {}
+        }
+      },
       "DiscountManagement.Application.Contracts/1.0.0": {
         "dependencies": {
           "0_Framework": "1.0.0",
@@ -2625,6 +2674,31 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "0_Framework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogManagement.Infrastructure.Coonfiguration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogManagement.Infrastructure.EfCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogMangement.Application.Inplementation/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

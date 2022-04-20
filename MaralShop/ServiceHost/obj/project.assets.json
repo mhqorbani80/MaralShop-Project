@@ -2349,6 +2349,78 @@
           "bin/placeholder/0_Framework.dll": {}
         }
       },
+      "BlogManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Application.Contracts.dll": {}
+        }
+      },
+      "BlogManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "BlogManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Domain.dll": {}
+        }
+      },
+      "BlogManagement.Infrastructure.Coonfiguration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BlogManagement.Application.Contracts": "1.0.0",
+          "BlogManagement.Infrastructure.EfCore": "1.0.0",
+          "BlogMangement.Application.Inplementation": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Infrastructure.Coonfiguration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Infrastructure.Coonfiguration.dll": {}
+        }
+      },
+      "BlogManagement.Infrastructure.EfCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BlogManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Infrastructure.EfCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Infrastructure.EfCore.dll": {}
+        }
+      },
+      "BlogMangement.Application.Inplementation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BlogManagement.Application.Contracts": "1.0.0",
+          "BlogManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogMangement.Application.Inplementation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogMangement.Application.Inplementation.dll": {}
+        }
+      },
       "DiscountManagement.Application.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -7799,6 +7871,31 @@
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
     },
+    "BlogManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Application.Contracts/BlogManagement.Application.Contracts.csproj",
+      "msbuildProject": "../BlogManagement.Application.Contracts/BlogManagement.Application.Contracts.csproj"
+    },
+    "BlogManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Domain/BlogManagement.Domain.csproj",
+      "msbuildProject": "../BlogManagement.Domain/BlogManagement.Domain.csproj"
+    },
+    "BlogManagement.Infrastructure.Coonfiguration/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Infrastructure.Coonfiguration/BlogManagement.Infrastructure.Coonfiguration.csproj",
+      "msbuildProject": "../BlogManagement.Infrastructure.Coonfiguration/BlogManagement.Infrastructure.Coonfiguration.csproj"
+    },
+    "BlogManagement.Infrastructure.EfCore/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Infrastructure.EfCore/BlogManagement.Infrastructure.EfCore.csproj",
+      "msbuildProject": "../BlogManagement.Infrastructure.EfCore/BlogManagement.Infrastructure.EfCore.csproj"
+    },
+    "BlogMangement.Application.Inplementation/1.0.0": {
+      "type": "project",
+      "path": "../BlogMangement.Application.Inplementation/BlogMangement.Application.Inplementation.csproj",
+      "msbuildProject": "../BlogMangement.Application.Inplementation/BlogMangement.Application.Inplementation.csproj"
+    },
     "DiscountManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj",
@@ -7882,6 +7979,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BlogManagement.Application.Contracts >= 1.0.0",
+      "BlogManagement.Infrastructure.Coonfiguration >= 1.0.0",
       "DiscountManagement.Configuration >= 1.0.0",
       "InventoryManagement.Infrastructure.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.4",
@@ -7921,6 +8020,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\BlogManagement.Application.Contracts\\BlogManagement.Application.Contracts.csproj"
+            },
+            "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\BlogManagement.Infrastructure.Coonfiguration\\BlogManagement.Infrastructure.Coonfiguration.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\BlogManagement.Infrastructure.Coonfiguration\\BlogManagement.Infrastructure.Coonfiguration.csproj"
+            },
             "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\DiscountManagement.Configure\\DiscountManagement.Configuration.csproj": {
               "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\DiscountManagement.Configure\\DiscountManagement.Configuration.csproj"
             },

@@ -1,4 +1,5 @@
 using _0_Framework.Application;
+using BlogManagement.Infrastructure.Coonfiguration;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastructure.Configuration;
 using ServiceHost;
@@ -14,6 +15,7 @@ var connectionString = builder.Configuration.GetConnectionString("MaralShopDbCon
 ShopBootstrapper.Configure(builder.Services, connectionString);
 DiscountBootstrapper.Configure(builder.Services, connectionString);
 InventoryBootstrapper.Configure(builder.Services, connectionString);
+BlogBoostrapper.Configure(builder.Services, connectionString);
 #endregion
 
 builder.Services.AddTransient<IFileUpload,FileUpload>();

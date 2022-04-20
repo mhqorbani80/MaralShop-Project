@@ -15,6 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Lenovo/source/repos/mhqorbani80/MaralShop-Prooject/MaralShop/ServiceHost/Areas/Administration/Pages/Blog/ArticleCategory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcQmxvZ1xBcnRpY2xlQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/mhqorbani80/MaralShop-Prooject/MaralShop/ServiceHost/Areas/Administration/Pages/Blog/ArticleCategory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcQmxvZ1xBcnRpY2xlQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/source/repos/mhqorbani80/MaralShop-Prooject/MaralShop/ServiceHost/Areas/Administration/Pages/Blog/ArticleCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcQmxvZ1xBcnRpY2xlQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/source/repos/mhqorbani80/MaralShop-Prooject/MaralShop/ServiceHost/Areas/Administration/Pages/Discount/ColleagueDiscount/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcRGlzY291bnRcQ29sbGVhZ3VlRGlzY291bnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

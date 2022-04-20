@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JD8v2eeKmE+akMGgzQg693E/DEWIVseIg4ykOWoDZB4=",
+  "Hash": "PQzyjQCQoNHNMJcI38jO74kQ6vsQBfPeyD2lrZle3Mo=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -6339,6 +6339,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\ServiceHost\\wwwroot\\Pictures\\asp-net-core\\2022-04-20-12-23-15-asp.NetCore.png",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Pictures/asp-net-core/2022-04-20-12-23-15-asp.NetCore.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pictures\\asp-net-core\\2022-04-20-12-23-15-asp.NetCore.png"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\ServiceHost\\wwwroot\\Pictures\\لوستر\\لوستر-کلاسیک\\2022-04-18-13-43-02-7889565.jpg",
