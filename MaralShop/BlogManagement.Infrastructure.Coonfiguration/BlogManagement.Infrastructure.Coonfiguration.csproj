@@ -14,6 +14,7 @@
     <ProjectReference Include="..\BlogManagement.Application.Contracts\BlogManagement.Application.Contracts.csproj" />
     <ProjectReference Include="..\BlogManagement.Infrastructure.EfCore\BlogManagement.Infrastructure.EfCore.csproj" />
     <ProjectReference Include="..\BlogMangement.Application.Inplementation\BlogMangement.Application.Inplementation.csproj" />
+    <ProjectReference Include="..\_MaralShopQuery\_MaralShopQuery.csproj" />
   </ItemGroup>
 
 </Project>

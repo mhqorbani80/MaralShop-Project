@@ -10,6 +10,8 @@
         "dependencies": {
           "BlogManagement.Application.Contracts": "1.0.0",
           "BlogManagement.Infrastructure.Coonfiguration": "1.0.0",
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "CommentManagement.Infrastructure.Configuration": "1.0.0",
           "DiscountManagement.Configuration": "1.0.0",
           "InventoryManagement.Infrastructure.Configuration": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.4",
@@ -1398,7 +1400,8 @@
           "BlogManagement.Application.Contracts": "1.0.0",
           "BlogManagement.Infrastructure.EfCore": "1.0.0",
           "BlogMangement.Application.Inplementation": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "_MaralShopQuery": "1.0.0"
         },
         "runtime": {
           "BlogManagement.Infrastructure.Coonfiguration.dll": {}
@@ -1421,6 +1424,55 @@
         },
         "runtime": {
           "BlogMangement.Application.Inplementation.dll": {}
+        }
+      },
+      "CommentManagement.Application.Contracts/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "CommentManagement.Application.Contracts.dll": {}
+        }
+      },
+      "CommentManagement.Application.Implementation/1.0.0": {
+        "dependencies": {
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "CommentManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CommentManagement.Application.Implementation.dll": {}
+        }
+      },
+      "CommentManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "CommentManagement.Domain.dll": {}
+        }
+      },
+      "CommentManagement.Infrastructure.Configuration/1.0.0": {
+        "dependencies": {
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "CommentManagement.Infrastructure.EfCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "CommentManagement.Infrastructure.Configuration.dll": {}
+        }
+      },
+      "CommentManagement.Infrastructure.EfCore/1.0.0": {
+        "dependencies": {
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "CommentManagement.Application.Implementation": "1.0.0",
+          "CommentManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+        },
+        "runtime": {
+          "CommentManagement.Infrastructure.EfCore.dll": {}
         }
       },
       "DiscountManagement.Application.Contracts/1.0.0": {
@@ -1572,6 +1624,9 @@
       },
       "_MaralShopQuery/1.0.0": {
         "dependencies": {
+          "BlogManagement.Infrastructure.EfCore": "1.0.0",
+          "CommentManagement.Domain": "1.0.0",
+          "CommentManagement.Infrastructure.EfCore": "1.0.0",
           "DiscountManagement.Infrastructure.EfCore": "1.0.0",
           "InventoryManagement.Infrastructure.EfCore": "1.0.0",
           "ShopManagement.Infrastructure.EfCore": "1.0.0"
@@ -2699,6 +2754,31 @@
       "sha512": ""
     },
     "BlogMangement.Application.Inplementation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Application.Implementation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Infrastructure.Configuration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Infrastructure.EfCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

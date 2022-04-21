@@ -57,6 +57,7 @@ namespace BlogMangement.Application.Inplementation
             return operation.IsSuccess();
         }
 
+
         public EditArticleCategory GetDetails(long id)
         {
             return _articleCategoryRepository.GetDetails(id);
@@ -65,6 +66,10 @@ namespace BlogMangement.Application.Inplementation
         public List<ArticleCategoryViewModel> Search(ArticleCategorySearchModel searchModel)
         {
             return _articleCategoryRepository.Search(searchModel);
+        }
+        public List<ArticleCategoryViewModel> GetArticleCategories()
+        {
+            return _articleCategoryRepository.GetArticleCategories();
         }
     }
 }

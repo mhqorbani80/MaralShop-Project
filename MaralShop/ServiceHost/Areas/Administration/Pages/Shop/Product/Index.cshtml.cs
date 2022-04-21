@@ -8,7 +8,6 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Product
 {
     public class IndexModel : PageModel
     {
-
         public ProductSearchModel SearchModel;
         public List<ProductViewModel> Products;
         public SelectList ProductCategories;

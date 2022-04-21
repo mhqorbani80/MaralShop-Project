@@ -1,5 +1,6 @@
 using _0_Framework.Application;
 using BlogManagement.Infrastructure.Coonfiguration;
+using CommentManagement.Infrastructure.EfCore;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastructure.Configuration;
 using ServiceHost;
@@ -11,11 +12,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 var connectionString = builder.Configuration.GetConnectionString("MaralShopDbContext");
+
 #region DependencyBootstrappers
 ShopBootstrapper.Configure(builder.Services, connectionString);
 DiscountBootstrapper.Configure(builder.Services, connectionString);
 InventoryBootstrapper.Configure(builder.Services, connectionString);
 BlogBoostrapper.Configure(builder.Services, connectionString);
+CommentBootstrapper.Configure(builder.Services, connectionString);
 #endregion
 
 builder.Services.AddTransient<IFileUpload,FileUpload>();

@@ -4,13 +4,11 @@ using _MaralShopQuery.Contacts.Slide;
 using _MaralShopQuery.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using ShopManagement.Application.Contracts.Comment;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Application.Contracts.Slide;
 using ShopManagement.Application.Implementation;
-using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
@@ -36,8 +34,7 @@ namespace ShopManagement.Configuration
             services.AddTransient<ISlideApplication, SlideApplication>();
             services.AddTransient<ISlideRepository, SlideRepository>();
 
-            services.AddTransient<ICommentApplication, CommentApplication>();
-            services.AddTransient<ICommentRepository, CommentRepository>();
+
 
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();

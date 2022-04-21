@@ -2383,7 +2383,8 @@
           "BlogManagement.Application.Contracts": "1.0.0",
           "BlogManagement.Infrastructure.EfCore": "1.0.0",
           "BlogMangement.Application.Inplementation": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "_MaralShopQuery": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BlogManagement.Infrastructure.Coonfiguration.dll": {}
@@ -2419,6 +2420,80 @@
         },
         "runtime": {
           "bin/placeholder/BlogMangement.Application.Inplementation.dll": {}
+        }
+      },
+      "CommentManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Application.Contracts.dll": {}
+        }
+      },
+      "CommentManagement.Application.Implementation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "CommentManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Application.Implementation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Application.Implementation.dll": {}
+        }
+      },
+      "CommentManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Domain.dll": {}
+        }
+      },
+      "CommentManagement.Infrastructure.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "CommentManagement.Infrastructure.EfCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Infrastructure.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Infrastructure.Configuration.dll": {}
+        }
+      },
+      "CommentManagement.Infrastructure.EfCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CommentManagement.Application.Contracts": "1.0.0",
+          "CommentManagement.Application.Implementation": "1.0.0",
+          "CommentManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Infrastructure.EfCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Infrastructure.EfCore.dll": {}
         }
       },
       "DiscountManagement.Application.Contracts/1.0.0": {
@@ -2647,6 +2722,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "BlogManagement.Infrastructure.EfCore": "1.0.0",
+          "CommentManagement.Domain": "1.0.0",
+          "CommentManagement.Infrastructure.EfCore": "1.0.0",
           "DiscountManagement.Infrastructure.EfCore": "1.0.0",
           "InventoryManagement.Infrastructure.EfCore": "1.0.0",
           "ShopManagement.Infrastructure.EfCore": "1.0.0"
@@ -7896,6 +7974,31 @@
       "path": "../BlogMangement.Application.Inplementation/BlogMangement.Application.Inplementation.csproj",
       "msbuildProject": "../BlogMangement.Application.Inplementation/BlogMangement.Application.Inplementation.csproj"
     },
+    "CommentManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Application.Contracts/CommentManagement.Application.Contracts.csproj",
+      "msbuildProject": "../CommentManagement.Application.Contracts/CommentManagement.Application.Contracts.csproj"
+    },
+    "CommentManagement.Application.Implementation/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Application.Implementation/CommentManagement.Application.Implementation.csproj",
+      "msbuildProject": "../CommentManagement.Application.Implementation/CommentManagement.Application.Implementation.csproj"
+    },
+    "CommentManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Domain/CommentManagement.Domain.csproj",
+      "msbuildProject": "../CommentManagement.Domain/CommentManagement.Domain.csproj"
+    },
+    "CommentManagement.Infrastructure.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Infrastructure.Configuration/CommentManagement.Infrastructure.Configuration.csproj",
+      "msbuildProject": "../CommentManagement.Infrastructure.Configuration/CommentManagement.Infrastructure.Configuration.csproj"
+    },
+    "CommentManagement.Infrastructure.EfCore/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Infrastructure.EfCore/CommentManagement.Infrastructure.EfCore.csproj",
+      "msbuildProject": "../CommentManagement.Infrastructure.EfCore/CommentManagement.Infrastructure.EfCore.csproj"
+    },
     "DiscountManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj",
@@ -7981,6 +8084,8 @@
     "net6.0": [
       "BlogManagement.Application.Contracts >= 1.0.0",
       "BlogManagement.Infrastructure.Coonfiguration >= 1.0.0",
+      "CommentManagement.Application.Contracts >= 1.0.0",
+      "CommentManagement.Infrastructure.Configuration >= 1.0.0",
       "DiscountManagement.Configuration >= 1.0.0",
       "InventoryManagement.Infrastructure.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.4",
@@ -8025,6 +8130,12 @@
             },
             "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\BlogManagement.Infrastructure.Coonfiguration\\BlogManagement.Infrastructure.Coonfiguration.csproj": {
               "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\BlogManagement.Infrastructure.Coonfiguration\\BlogManagement.Infrastructure.Coonfiguration.csproj"
+            },
+            "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\CommentManagement.Application.Contracts\\CommentManagement.Application.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\CommentManagement.Application.Contracts\\CommentManagement.Application.Contracts.csproj"
+            },
+            "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
             },
             "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\DiscountManagement.Configure\\DiscountManagement.Configuration.csproj": {
               "projectPath": "C:\\Users\\Lenovo\\source\\repos\\mhqorbani80\\MaralShop-Prooject\\MaralShop\\DiscountManagement.Configure\\DiscountManagement.Configuration.csproj"

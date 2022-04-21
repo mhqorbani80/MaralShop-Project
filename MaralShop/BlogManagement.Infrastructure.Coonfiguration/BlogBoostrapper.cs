@@ -1,4 +1,9 @@
-﻿using BlogManagement.Application.Contracts.ArticleCategory;
+﻿using _MaralShopQuery.Contacts.Article;
+using _MaralShopQuery.Contacts.ArticleCategory;
+using _MaralShopQuery.Query;
+using BlogManagement.Application.Contracts.Article;
+using BlogManagement.Application.Contracts.ArticleCategory;
+using BlogManagement.Domain.ArticleAgg;
 using BlogManagement.Domain.ArticleCategoryAgg;
 using BlogManagement.Infrastructure.EfCore;
 using BlogManagement.Infrastructure.EfCore.Repository;
@@ -14,6 +19,13 @@ namespace BlogManagement.Infrastructure.Coonfiguration
         {
             services.AddTransient<IArticleCategoryApplication,ArticleCategoryApplication>();
             services.AddTransient<IArticleCategoryRepository, ArticleCategoryRepository>();
+
+            services.AddTransient<IArticleApplication,ArticleApplication>();
+            services.AddTransient<IArticleRepository, ArticleRepository>();
+
+            services.AddTransient<IArticleQuery, ArticleQuery>();
+            services.AddTransient<IArticleCategoryQuery, ArticleCategoryQuery>();
+
             services.AddDbContext<BlogContext>(options =>
             {
                 options.UseSqlServer(connectionString);

@@ -1,7 +1,8 @@
 using _MaralShopQuery.Contacts.Product;
+using CommentManagement.Application.Contracts.Comment;
+using CommentManagement.Infrastructure.EfCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ShopManagement.Application.Contracts.Comment;
 
 namespace ServiceHost.Pages
 {
@@ -22,9 +23,10 @@ namespace ServiceHost.Pages
         {
             Product = _productQuery.GetProduct(id);
         }
-        public IActionResult OnPostAdd(AddComment command,string ProductSlug)
+        public IActionResult OnPost(AddComment command,string ProductSlug)
         {
-           var comment= _commentApplication.Create(command);
+            command.Type = CommentTypes.Product;
+            _commentApplication.Create(command);
             return RedirectToPage("./Product", new {id= ProductSlug});
         }
     }

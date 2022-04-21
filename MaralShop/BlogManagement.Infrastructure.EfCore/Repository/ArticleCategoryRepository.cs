@@ -14,6 +14,7 @@ namespace BlogManagement.Infrastructure.EfCore.Repository
             _blogContext = blogContext;
         }
 
+
         public EditArticleCategory GetDetails(long id)
         {
             return _blogContext.ArticleCategories.Select(i => new EditArticleCategory
@@ -50,6 +51,15 @@ namespace BlogManagement.Infrastructure.EfCore.Repository
 
 
             return articleCategories.OrderByDescending(i => i.ShowOrder).ToList();
+        }
+        public List<ArticleCategoryViewModel> GetArticleCategories()
+        {
+            return _blogContext.ArticleCategories
+                .Select(i => new ArticleCategoryViewModel
+                {
+                    Id = i.Id,
+                    Name = i.Name,
+                }).ToList();
         }
     }
 }

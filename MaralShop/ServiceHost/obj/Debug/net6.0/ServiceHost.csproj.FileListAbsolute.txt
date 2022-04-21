@@ -109,3 +109,13 @@ C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHos
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\BlogManagement.Domain.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\BlogManagement.Infrastructure.EfCore.pdb
 C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\BlogMangement.Application.Inplementation.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\CommentManagement.Application.Contracts.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\CommentManagement.Domain.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\CommentManagement.Application.Contracts.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\CommentManagement.Domain.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\CommentManagement.Application.Implementation.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\CommentManagement.Infrastructure.Configuration.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\CommentManagement.Infrastructure.EfCore.dll
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\CommentManagement.Infrastructure.Configuration.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\CommentManagement.Application.Implementation.pdb
+C:\Users\Lenovo\source\repos\mhqorbani80\MaralShop-Prooject\MaralShop\ServiceHost\bin\Debug\net6.0\CommentManagement.Infrastructure.EfCore.pdb
